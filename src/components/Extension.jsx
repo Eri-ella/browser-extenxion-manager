@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/images/logo-devlens.svg";
+import { Switch } from "./Switch";
 
 export default function Extension () {
     const [datas, setDatas] = useState(null);
@@ -26,7 +27,9 @@ export default function Extension () {
                     <p>{data.description}</p>
                 </span>
             </span>
-            
+            <span>
+                <Switch/>
+            </span>
         </li>
     )
 
