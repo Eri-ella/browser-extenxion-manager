@@ -17,12 +17,6 @@ export default function Extension () {
         return (<div>"En attente..."</div>)
     }
 
-    function handleClick({id1}){
-        
-    }
-
-    
-
     const listDatas = datas.map((data, index) =>
         <li key = {index + "-" + data.name} id = {data.name}>
             <span className="line1">
@@ -38,9 +32,11 @@ export default function Extension () {
             <span className="line2">
                 <Button 
                     name="Remove"
-                    onClick={() => handleClick(data.name)}
+                    onClick={() => setDatas(datas.filter(donnee => donnee.name !== data.name ))}
                 />          
-                <Switch/>
+                <Switch 
+                    turnOn={data.isActive}
+                />
             </span>
         </li>
     )
