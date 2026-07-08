@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Switch } from "./Switch";
 import "../styles/Extension.css";
+import { Button } from "./Button";
 
 export default function Extension () {
     const [datas, setDatas] = useState(null);
@@ -16,8 +17,14 @@ export default function Extension () {
         return (<div>"En attente..."</div>)
     }
 
+    function handleClick({id1}){
+        
+    }
+
+    
+
     const listDatas = datas.map((data, index) =>
-        <li key = {index + "-" + data.name}>
+        <li key = {index + "-" + data.name} id = {data.name}>
             <span className="line1">
                 <img 
                     src = {data.logo}
@@ -27,8 +34,9 @@ export default function Extension () {
                     <p className="name">{data.name}</p>
                     <p className="description">{data.description}</p>
                 </span>
-            </span>
+            </span> 
             <span className="line2">
+                <button onClick={() => handleClick(data.name)}>Remove</button>
                 <Switch className="switch"/>
             </span>
         </li>
@@ -36,6 +44,10 @@ export default function Extension () {
 
     return(
         <>
+            {/*<Button 
+                name="Bonjour"
+                onClick={() => alert('Bonjour')} 
+            />*/}
            <ul className="container">{listDatas}</ul>
         </>
     )
