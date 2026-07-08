@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import logo from "../assets/images/logo-devlens.svg";
 import { Switch } from "./Switch";
+import "../styles/Extension.css";
 
 export default function Extension () {
     const [datas, setDatas] = useState(null);
@@ -18,25 +18,25 @@ export default function Extension () {
 
     const listDatas = datas.map((data, index) =>
         <li key = {index + "-" + data.name}>
-            <span>
+            <span className="line1">
                 <img 
                     src = {data.logo}
+                    className="image"
                 />
                 <span>
-                    <p>{data.name}</p>
-                    <p>{data.description}</p>
+                    <p className="name">{data.name}</p>
+                    <p className="description">{data.description}</p>
                 </span>
             </span>
-            <span>
-                <Switch/>
+            <span className="line2">
+                <Switch className="switch"/>
             </span>
         </li>
     )
 
     return(
         <>
-           <ul>{listDatas}</ul>
-           <img src={logo} alt="le logo" />
+           <ul className="container">{listDatas}</ul>
         </>
     )
 }
