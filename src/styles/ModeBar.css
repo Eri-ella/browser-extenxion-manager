@@ -1,0 +1,22 @@
+.navBar{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #1F2535;
+}
+
+.clicker{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #52586E;
+    background-color: #52586E;
+}
+
+.clicker:hover{
+    background-color: #f05d55;
+    border: 1px solid #f05d55;
+    color: #1F2535;
+}
