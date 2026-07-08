@@ -1,0 +1,9 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col2{
+    display: flex;
+    gap: 5px;
+}
