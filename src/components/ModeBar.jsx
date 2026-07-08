@@ -10,16 +10,16 @@ export default function ModeBar(){
 
     return(
         <>
-            <section className='navBar'>
-                <span className='col1'>
+            <section className='modeBar'>
+                <span className='mainLogo'>
                     <img 
                         src={Logo}
                         alt="Main logo" 
                     />
                 </span /* */>
-                <span className='col2'>
+                <span className='lightLogo'>
                     <button 
-                        className='clicker' 
+                        className='light' 
                         onClick={() => light ? setLight(false) : setLight(true)}>
                             <img 
                                 src={light ? Moon : Sun} 

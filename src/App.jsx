@@ -1,3 +1,4 @@
+import "./App.css";
 import Extension from "./components/Extension";
 import NavBar from "./components/NavBar";
 import ModeBar from "./components/ModeBar";
@@ -6,12 +7,15 @@ import ModeBar from "./components/ModeBar";
 export default function App() {
     return(
         <>
-            <ModeBar />
-            <Extension />
-            {/*
+            <section className="mainContainer">
+                <ModeBar />
                 <NavBar />
-                < Switch />
-            */}  
+                <Extension />
+                {/*
+                    
+                    < Switch />
+                */}  
+            </section>
         </>
     )
     

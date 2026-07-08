@@ -36,8 +36,11 @@ export default function Extension () {
                 </span>
             </span> 
             <span className="line2">
-                <button onClick={() => handleClick(data.name)}>Remove</button>
-                <Switch className="switch"/>
+                <Button 
+                    name="Remove"
+                    onClick={() => handleClick(data.name)}
+                />          
+                <Switch/>
             </span>
         </li>
     )

@@ -1,0 +1,5 @@
+.mainContainer{
+    background-image: linear-gradient(to bottom, #04091C, #0A1542);
+    width: fit-content;
+    padding: 30px 70px;
+}

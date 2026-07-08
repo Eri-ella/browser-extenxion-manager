@@ -1,12 +1,14 @@
-.navBar{
-    width: 100%;
+.modeBar{
+    
+    display: flex;
+    justify-content: space-between;
     height: fit-content;
     padding: 10px;
     border-radius: 15px;
     background-color: #1F2535;
 }
 
-.clicker{
+.light{
     width: fit-content;
     height: fit-content;
     padding: 10px;
@@ -15,7 +17,7 @@
     background-color: #52586E;
 }
 
-.clicker:hover{
+.light:hover{
     background-color: #f05d55;
     border: 1px solid #f05d55;
     color: #1F2535;

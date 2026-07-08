@@ -1,6 +1,12 @@
 .navBar{
     display: flex;
     justify-content: space-between;
+    margin: 25px 0 5px 0;
+}
+
+.col1{
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 .col2{
