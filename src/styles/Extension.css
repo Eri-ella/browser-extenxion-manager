@@ -4,6 +4,11 @@ body{
     box-sizing: border-box;
 }
 
+p{
+    margin-block-start: 0;
+    margin-block-end: 10px;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -27,7 +32,7 @@ li{
 
 .line1{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: start;
     text-align: start;
 }
@@ -35,7 +40,7 @@ li{
 .line2{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .name{

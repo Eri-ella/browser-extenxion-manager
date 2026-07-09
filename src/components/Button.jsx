@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export function Button({name, onClick}) {
     const[clicked, setClicked] = useState(false);
-
+    
     return(
         <>
             <button 

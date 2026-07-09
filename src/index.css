@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myFont;
+  src: url('./assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf');
+}
+
 :root{
   --body_background: linear-gradient(to bottom, #04091C, #0A1542);
   --body_color: rgb(247, 235, 235);
@@ -5,6 +10,7 @@
   --border: #52586E;
   --light_color: #52586E;
   --hover: #484c57;
+  font-family: myFont;
 }
 
 [data-theme="light"] {

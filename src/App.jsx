@@ -8,12 +8,12 @@ import ModeBar from "./components/ModeBar";
 export default function App() {
     const [appear, setAppear] = useState("all");
     const [light, setLight] = useState(false);
-
+    const [buttonFocus, setButtonFocus] = useState();
     return(
         <>
             <section className="mainContainer">
                 <ModeBar light={light} setLight={setLight}/>
-                <NavBar appear={appear} setAppear={setAppear} />
+                <NavBar appear={appear} setAppear={setAppear} buttonFocus={buttonFocus} setbuttonFocus={setButtonFocus}/>
                 <Extension appear={appear}  setAppear={setAppear} />
                 {/*
                     < Switch />
