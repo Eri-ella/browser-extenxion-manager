@@ -3,7 +3,8 @@ import './Button'
 import { Button } from './Button';
 import Extension from './Extension';
 
-export default function NavBar({appear, setAppear}) {
+export default function NavBar({appear, setAppear, focusBut, setFocusBut}) {
+
     return(
         <>
             <section className='navBar'>
@@ -15,16 +16,19 @@ export default function NavBar({appear, setAppear}) {
                         className="button"
                         name="All"
                         onClick={() => setAppear("all")}
+                        isFocused={appear == "all" ? true : false}
                     />
                     <Button
                         className="button"
                         name="Active"
                         onClick={() => setAppear("active")}
+                        isFocused={appear == "active" ? true : false}
                     />
                     <Button
                         className="button"
                         name="Inactive"
                         onClick={() => setAppear("inactive")}
+                        isFocused={appear == "inactive" ? true : false}
                     />
                 </span>
             </section>

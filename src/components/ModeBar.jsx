@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styles/ModeBar.css';
 //import '../styles/ModeBarLight.css';
 import Logo from '../assets/images/logo.svg'
-import LogoLight from '../assets/images/logo-light.svg'
+import LogoLight from '../assets/images/logo-light.png'
 import Sun from '../assets/images/icon-sun.svg'
 import Moon from '../assets/images/icon-moon.svg'
 
@@ -19,7 +19,8 @@ export default function ModeBar({light, setLight}){
             <section className='modeBar'>
                 <span className='mainLogo'>
                     <img 
-                        src={Logo}
+                        className='logo'
+                        src={light ? Logo : LogoLight}
                         alt="Main logo" 
                     />
                 </span>
