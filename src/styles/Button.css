@@ -3,11 +3,19 @@
     height: fit-content;
     padding: 5px 10px;
     border-radius: 20px;
-    border: 1px solid #52586E;
-    background-color: #1F2535;
+    border: 1px solid var(--border);
+    background-color: var(--background_color);
+    cursor: pointer;
+    color: var(--body_color);
 }
 
 .clicker:hover{
+    background-color: var(--hover);
+    border: 1px solid var(--hover);
+    color: #1F2535;
+}
+
+.clicker:focus{
     background-color: #f05d55;
     border: 1px solid #f05d55;
     color: #1F2535;

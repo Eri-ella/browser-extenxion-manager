@@ -1,11 +1,10 @@
 .modeBar{
-    
     display: flex;
     justify-content: space-between;
     height: fit-content;
     padding: 10px;
     border-radius: 15px;
-    background-color: #1F2535;
+    background-color: var(--background_color);
 }
 
 .light{
@@ -13,12 +12,13 @@
     height: fit-content;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #52586E;
-    background-color: #52586E;
+    border: 1px solid transparent;
+    background-color: var(--light_color);
+    cursor: pointer;
 }
 
 .light:hover{
-    background-color: #f05d55;
-    border: 1px solid #f05d55;
+    background-color: var(--hover);
+    border: 1px solid var(--hover);
     color: #1F2535;
 }

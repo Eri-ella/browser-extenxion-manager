@@ -1,5 +1,16 @@
 .mainContainer{
-    background-image: linear-gradient(to bottom, #04091C, #0A1542);
+    background-image: var(--body_background);
     width: fit-content;
+    min-width: 190vh;
+    min-height: 100vh;
     padding: 30px 70px;
+    color: var(--body_color);
+}
+
+@media (max-width: 500px) {
+    .mainContainer{
+        width: fit-content;
+        min-width: 5vh;
+        min-height: 150vh;
+    }
 }

@@ -17,8 +17,8 @@ li{
     min-width: 300px;
     min-height: 160px;
     border-radius: 20px;
-    background-color: #1F2535;
-    border: 1px solid #52586E;
+    background-color: var(--background_color);
+    border: 1px solid var(--border);
 }
 
 .description{
@@ -42,3 +42,11 @@ li{
     font-weight: bold;
 }
 
+@media (max-width: 500px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        padding-inline-start: 0;
+    }
+    
+}

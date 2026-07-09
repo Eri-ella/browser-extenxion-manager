@@ -1,21 +1,9 @@
 import '../styles/NavBar.css';
 import './Button'
 import { Button } from './Button';
+import Extension from './Extension';
 
-
-export default function NavBar() {
-    function handleAll(){
-
-    }
-
-    function handleActive(){
-        
-    }
-
-    function handleInactive(){
-        
-    }
-
+export default function NavBar({appear, setAppear}) {
     return(
         <>
             <section className='navBar'>
@@ -26,17 +14,17 @@ export default function NavBar() {
                     <Button
                         className="button"
                         name="All"
-                        onClick={handleAll}
+                        onClick={() => setAppear("all")}
                     />
                     <Button
                         className="button"
                         name="Active"
-                        onClick={handleAll}
+                        onClick={() => setAppear("active")}
                     />
                     <Button
                         className="button"
                         name="Inactive"
-                        onClick={handleInactive}
+                        onClick={() => setAppear("inactive")}
                     />
                 </span>
             </section>

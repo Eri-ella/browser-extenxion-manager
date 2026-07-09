@@ -1,3 +1,22 @@
+:root{
+  --body_background: linear-gradient(to bottom, #04091C, #0A1542);
+  --body_color: rgb(247, 235, 235);
+  --background_color: #1F2535;
+  --border: #52586E;
+  --light_color: #52586E;
+  --hover: #484c57;
+}
+
+[data-theme="light"] {
+  --body_background: linear-gradient(to bottom, #ECF5FC, #ECF5FC);
+  --body_color: #081035;
+  --background_color: #FCFDFF;
+  --border: #DCE3EB;
+  --light_color: #ECECEC;
+  --hover: #C6C6C6; 
+}
+
+/*
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -32,6 +51,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    background-image: linear-gradient(to bottom, #04091C, #0A1542);
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16171d;
@@ -109,3 +129,4 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+*/

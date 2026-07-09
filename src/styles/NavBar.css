@@ -1,6 +1,7 @@
 .navBar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 25px 0 5px 0;
 }
 
@@ -12,4 +13,17 @@
 .col2{
     display: flex;
     gap: 5px;
+}
+
+@media (max-width: 500px) {
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 5px 0;
+    }
+    .col2{
+        margin: 0 0 5px 0;
+    }
 }
