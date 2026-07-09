@@ -11,6 +11,7 @@
   --light_color: #52586E;
   --hover: #485166;
   font-family: myFont;
+  background-image: linear-gradient(to bottom, #04091C, #0A1542);
 }
 
 [data-theme="light"] {

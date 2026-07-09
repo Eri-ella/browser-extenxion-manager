@@ -1,18 +1,18 @@
 .clicker{
     width: fit-content;
     height: fit-content;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 20px;
     border: 1px solid var(--border);
     background-color: var(--background_color);
     cursor: pointer;
     color: var(--body_color);
+    font-size: medium;
 }
 
 .clicker:hover{
     background-color: var(--hover);
     border: 1px solid var(--hover);
-    color: #1F2535;
 }
 
 .clicker:focus{
