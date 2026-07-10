@@ -1,4 +1,4 @@
-.clicker{
+.clicker, .clickerRed{
     width: fit-content;
     height: fit-content;
     padding: 5px 15px;
@@ -15,8 +15,8 @@
     border: 1px solid var(--hover);
 }
 
-.clicker:focus{
-    background-color: #f05d55;
-    border: 1px solid #f05d55;
-    color: #1F2535;
+.clicker:focus, .clickerRed:focus, .clickerRed:hover{
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    color: hsl(227, 75%, 14%);
 }

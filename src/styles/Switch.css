@@ -17,7 +17,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #ccc;
+    background-color: var(--hover);
     transition: .4s;
     border-radius: 20px;
     cursor: pointer;
@@ -37,7 +37,7 @@
 }
 
 input:checked + .slider{
-    background-color: #f05d55;
+    background-color: var(--red);
 }
 
 input:checked + .slider::before{
