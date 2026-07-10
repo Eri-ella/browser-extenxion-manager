@@ -8,6 +8,7 @@ import Moon from '../assets/images/icon-moon.svg'
 
 
 export default function ModeBar({light, setLight}){
+    // conditions to change the color depending on the selected theme
     if (light){
         document.querySelector("body").setAttribute("data-theme", "light");
     } else {

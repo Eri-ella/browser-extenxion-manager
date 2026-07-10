@@ -7,6 +7,8 @@
     background-color: var(--background_color);
 }
 
+/* style the button for changing theme */
+
 .light{
     width: fit-content;
     height: fit-content;
@@ -26,6 +28,8 @@
     width: 200px;
     height: 50px;
 }
+
+/* small screen version */
 
 @media (max-width: 500px){
     .logo{

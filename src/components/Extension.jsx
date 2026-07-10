@@ -7,7 +7,7 @@ export default function Extension ({appear, setAppear}) {
     const [datas, setDatas] = useState(null);
     const [switchCkecked, setSwitchCkecked] = useState();
 
-
+    // import extensions's datas
     useEffect(() => {
         fetch ('./data.json')
             .then(infos => infos.json())
@@ -19,6 +19,7 @@ export default function Extension ({appear, setAppear}) {
         return (<div>"En attente..."</div>)
     }
 
+    // extensions when "all" option is selected
     const listDatas = datas.map((data, index) =>
         <li key = {index + "-" + data.name} id = {data.name}>
             <span className="line1">
@@ -32,6 +33,7 @@ export default function Extension ({appear, setAppear}) {
                 </span>
             </span> 
             <span className="line2">
+                {/*function for removing extension*/}
                 <Button 
                     name="Remove"
                     onClick={() => setDatas(datas.filter(donnee => donnee.name !== data.name ))}
@@ -45,9 +47,11 @@ export default function Extension ({appear, setAppear}) {
         </li>
     )
 
+    // filter active and inactive extensions
     const activeDatas = datas.filter(data => data.isActive == true)
     const inactiveDatas = datas.filter(data => data.isActive == false)
 
+    // extensions when "active" option is selected
     const listActiveDatas = activeDatas.map((data, index) =>
         <li key = {index + "-" + data.name} id = {data.name}>
             <span className="line1">
@@ -75,6 +79,7 @@ export default function Extension ({appear, setAppear}) {
         </li>
     )
 
+    // extensions when "inactive" option is selected
     const listInactiveDatas = inactiveDatas.map((data, index) =>
         <li key = {index + "-" + data.name} id = {data.name}>
             <span className="line1">
@@ -103,7 +108,7 @@ export default function Extension ({appear, setAppear}) {
     )
 
 
-
+    // return conditions depending on the selected option
     return appear === "all" ? (
         <>
            <ul className="container">{listDatas}</ul>

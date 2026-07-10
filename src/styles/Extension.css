@@ -15,6 +15,8 @@ p{
     padding-inline-start: 0;
 }
 
+/*style extensions*/
+
 li{
     list-style: none;
     margin: 5px;
@@ -48,6 +50,7 @@ li{
     font-weight: bold;
 }
 
+/* small screen version */
 @media (max-width: 500px) {
     .container{
         display: grid;
