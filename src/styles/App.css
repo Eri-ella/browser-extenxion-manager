@@ -1,7 +1,7 @@
 .mainContainer{
     background-image: var(--body_background);
     width: fit-content;
-    min-width: 160vh;
+    min-width: 100%;
     min-height: 100vh;
     padding: 30px 90px;
     color: var(--body_color);
@@ -10,7 +10,7 @@
 @media (max-width: 500px) {
     .mainContainer{
         width: fit-content;
-        min-width: 5vh;
+        min-width: 100%;
         min-height: 150vh;
         padding: 30px 20px;
     }
