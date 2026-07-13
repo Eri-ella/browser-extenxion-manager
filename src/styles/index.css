@@ -4,7 +4,7 @@
 }
 
 :root{
-  --body_background: linear-gradient(180%, #040918, #091540);
+  --body_background: linear-gradient(to bottom, #040918, #091540);
   --body_color: hsl(0, 0%, 78%);
   --background_color: hsl(226, 25%, 17%);
   --border: hsl(225, 23%, 24%);
@@ -16,7 +16,7 @@
 }
 
 [data-theme="light"] {
-  --body_background: linear-gradient(180%, #ECF5FC, #ECF5FC);
+  --body_background: linear-gradient(to bottom, #ECF5FC, #ECF5FC);
   --body_color: hsl(227, 75%, 14%);
   --background_color: hsl(200, 60%, 99%);
   --border: hsl(0, 0%, 93%);
