@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import '../styles/ModeBar.css';
 //import '../styles/ModeBarLight.css';
-import Logo from '../assets/images/logo.svg'
-import LogoLight from '../assets/images/logo-light.png'
-import Sun from '../assets/images/icon-sun.svg'
-import Moon from '../assets/images/icon-moon.svg'
+import Logo from '/images/logo.svg'
+import LogoLight from '/images/logo-light.png'
+import Sun from '/images/icon-sun.svg'
+import Moon from '/images/icon-moon.svg'
 
 
 export default function ModeBar({light, setLight}){
